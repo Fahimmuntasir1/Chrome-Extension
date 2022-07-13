@@ -1,6 +1,13 @@
 {
-    "manifest_version" : 2,
-    "name" : "Eagle EYE",
-    "version" : "0.1.0",
-    
+  "manifest_version": 3,
+  "description": "Build an Extension!",
+  "name": "Eagle EYE",
+  "version": "0.1.0",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["script.js"],
+      "css": ["style.css"]
+    }
+  ]
 }
